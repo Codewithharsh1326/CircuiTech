@@ -130,7 +130,7 @@ MONGODB_URI=your_mongo_atlas_connection
 DIGIKEY_CLIENT_ID=your_digikey_id
 DIGIKEY_CLIENT_SECRET=your_digikey_secret
 OCTOPART_API_KEY=your_nexar_token
-CORS_ORIGINS=http://localhost:5173
+CORS_ORIGINS=http://localhost
 ```
 
 ### 2. Bootstrapping the Backend
@@ -146,7 +146,7 @@ uvicorn app.main:app --reload # Runs heavily async backend at :8000
 ```bash
 cd frontend
 npm install
-npm run dev # Mounts the React application at :5173
+npm run dev
 ```
 
 ---
